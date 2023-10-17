@@ -1,0 +1,84 @@
+Plotting with Categorical Data
+
+catplot [Figure Level Function]
+
+1. Categorical Scatter Plots .
+
+a. Strip Plot
+b. Swarm Plot
+
+2. Categorical distribution Plots .
+
+a. Box Plot
+b. Violin Plot
+
+3. Categorical estimate plots .
+
+a. Point Plot
+b. Bar Plot
+c. Count Plot
+
+4. Categorical Categorical plots .
+
+a. Heat Map
+b. Cluster Map
+
+5. Plotting side by side graphs using Facet Grids .
+
+Scatter Plots
+
+The scatter plot is a mainstay of statistical visualization . It depicts the joint distribution of two variables using a cloud of points , where each point represents an observation in the dataset . This depiction allows the eye to infer a substantial amount of information about whether there is any meaningful relationship between them .
+
+Although, scatter plot can be plotted for both numerical as well as categorical data , it's mostly used to depict relationship between numerical data .
+
+There are 2 ways to draw a scatterplot in seaborn are as :
+
+1. relplot() which is a "Figure Level Function" .
+2. scatterplot() which is a "Axes Level Function" .
+
+The scatter plot use simple and easily to understood representations of data even on complex data by mapping up to three additional variables using the semantics of hue , size , and style .
+
+Box Plots
+
+A box plot is a standardized way of displaying the distribution of data based on a five number summary ( "minimum" , first quartile (Q1) , median , third quartile (Q3) , and "maximum" ) . It can tell you about your outliers and what their values are . It can also tell you if your data is symmetrical, how tightly your data is grouped , and if and how your data is skewed .
+
+Violin Plots
+
+A violin plots are a method of plotting numeric data and can be considered a combination of the box plot with a kernel density plot . The unquestionable advantage of the violin plot over the box plot is that aside from showing the statistics it also shows the entire distribution of the data . They are often used to compare the distribution of a given variable across some categories .
+
+Heat Maps
+
+A heat maps is a graphical representation of data where the individual values contained in a matrix are represented as colors . 
+
+Joint Plots
+
+The joint plots creates a multi-panel figure that shows both the bivariate or joint relationship between two variables along with the univariate or marginal distribution of each on separate axes .
+
+The joint plots can be used in the following 4 manners:
+
+1. Scatter Plots
+2. Hexbin Plots
+3. Kde Plots
+4. Reg Plots
+
+Pair Plots
+
+The pair plots are used to plot multiple pairwise bivariate distributions in a dataset . This creates a matrix of axes and shows the relationship for each pair of columns in a dataframe. By default , it also draws the univariate distribution of each variable on the diagonal axes .
+
+Dist Plots
+
+The dist plots are used to do univariate analysis on a continous/numerical data .
+
+The dist plot combines 3 things in one graph are as follows :
+
+1. hist() : Histogram
+2. kde() : Kernel Density Estimation
+3. rug() : Rugplot
+
+Line Plots
+
+The line plots are generally used for time series data .
+
+Facet Grids
+
+The facet grids are used for plotting multiple graphs side by side .
